@@ -4,9 +4,7 @@ from bot_config import bot, dp
 from handlers.start import start_router
 from handlers.random_photo import random_router
 from handlers.myinfo import myinfo_router
-
-
-
+import logging
 
 
 async def main():
@@ -18,4 +16,5 @@ async def main():
 
 
 if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
     asyncio.run(main())

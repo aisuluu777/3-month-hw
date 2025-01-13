@@ -46,3 +46,5 @@ async def review_handler(message: types.Message, state: FSMContext):
     await message.answer('Спасибо за оставленный отзыв')
     await state.update_data(reviewed=True)
     await state.clear()
+
+

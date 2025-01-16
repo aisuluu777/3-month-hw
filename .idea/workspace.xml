@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17c93660-7c9d-4012-abe3-dbebae852059" name="Changes" comment="" />
+    <list default="true" id="17c93660-7c9d-4012-abe3-dbebae852059" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/review_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/review_dialog.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,30 +46,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.HW6">
-    <configuration name="HW6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="3_Month_hw" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/HW6.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="3_Month_hw" />
       <option name="ENV_FILES" value="" />
@@ -92,7 +72,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HW6" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -133,7 +112,14 @@
       <workItem from="1736501715955" duration="914000" />
       <workItem from="1736591502641" duration="1276000" />
       <workItem from="1736596534461" duration="561000" />
-      <workItem from="1736751512092" duration="9988000" />
+      <workItem from="1736751512092" duration="10539000" />
+      <workItem from="1736839977363" duration="27000" />
+      <workItem from="1736840821827" duration="3555000" />
+      <workItem from="1736847758133" duration="1832000" />
+      <workItem from="1736924477648" duration="2657000" />
+      <workItem from="1736928158199" duration="1202000" />
+      <workItem from="1736930765441" duration="5832000" />
+      <workItem from="1736944072053" duration="230000" />
     </task>
     <servers />
   </component>

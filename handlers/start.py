@@ -1,6 +1,7 @@
 from aiogram import Router, types
 from aiogram.filters import Command
 
+
 start_router = Router()
 
 @start_router.message(Command('start'))
@@ -13,6 +14,7 @@ async def start_handler(message: types.Message):
         [types.InlineKeyboardButton(text='Оставить отзыв', callback_data='review')]
 
     ])
+
     await message.answer(f'Привет {name}\n'
                          f'Мои комманды:\n '
                          f'/start - начать работу с ботом\n'

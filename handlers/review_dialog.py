@@ -30,9 +30,9 @@ async def stop_review(message: types.Message, state: FSMContext):
 
 @review_router.callback_query(F.data == 'review')
 async def review_handler(callback: types.CallbackQuery, state: FSMContext):
-        await callback.message.answer("Оставьте жалобу ответив на несколько вопросов. Можете остановить диалог с ботом введя команду '/stop' или 'стоп'")
-        await callback.message.answer('Как вас зовут?')
-        await state.set_state(RestourantReview.name)
+            await callback.message.answer("Оставьте жалобу ответив на несколько вопросов. Можете остановить диалог с ботом введя команду '/stop' или 'стоп'")
+            await callback.message.answer('Как вас зовут?')
+            await state.set_state(RestourantReview.name)
 
 
 @review_router.message(RestourantReview.name)
@@ -54,7 +54,7 @@ async def number_handler(message: types.Message,state: FSMContext):
 @review_router.callback_query(RestourantReview.rate)
 async def rating_handler(callback: CallbackQuery, state: FSMContext):
     rate = callback.data[5:]
-    await state.update_data(rate=rate)
+    await state.update_data(rate=int(rate))
     await callback.message.answer('Дополнительные комментарии/жалоба?')
     await state.set_state(RestourantReview.extra_comments)
 

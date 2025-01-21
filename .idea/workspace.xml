@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c93660-7c9d-4012-abe3-dbebae852059" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/handlers/add_food_dialog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7b1d8cc0-aee4-448a-b085-27d441814b39.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7b1d8cc0-aee4-448a-b085-27d441814b39.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/review_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/review_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +140,11 @@
       <workItem from="1737359255513" duration="3516000" />
       <workItem from="1737362981042" duration="450000" />
       <workItem from="1737363443234" duration="450000" />
-      <workItem from="1737363921793" duration="2723000" />
+      <workItem from="1737363921793" duration="3526000" />
+      <workItem from="1737444236378" duration="4371000" />
+      <workItem from="1737448642801" duration="487000" />
+      <workItem from="1737449447948" duration="348000" />
+      <workItem from="1737449859686" duration="1417000" />
     </task>
     <servers />
   </component>
@@ -160,7 +163,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/3_Month_hw$main.coverage" NAME="main Coverage Results" MODIFIED="1737097861838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3_Month_hw$main.coverage" NAME="main Coverage Results" MODIFIED="1737449782969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3_Month_hw$HW6.coverage" NAME="HW6 Coverage Results" MODIFIED="1736501735242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
   </component>
 </project>

@@ -3,6 +3,8 @@ from aiogram import Router, types, F
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import InlineKeyboardMarkup, CallbackQuery
+
+
 from bot_config import database
 
 review_router = Router()
@@ -27,12 +29,18 @@ async def stop_review(message: types.Message, state: FSMContext):
     await message.answer('Диалог остановлен')
     await state.clear()
 
-
+user = []
 @review_router.callback_query(F.data == 'review')
 async def review_handler(callback: types.CallbackQuery, state: FSMContext):
-            await callback.message.answer("Оставьте жалобу ответив на несколько вопросов. Можете остановить диалог с ботом введя команду '/stop' или 'стоп'")
-            await callback.message.answer('Как вас зовут?')
-            await state.set_state(RestourantReview.name)
+         user_id = callback.from_user.id
+         if user_id in user:
+             await callback.message.answer('Нельзя оставлять отзыв более одного раза!')
+             await state.clear()
+         else:
+             user.append(user_id)
+             await callback.message.answer("Оставьте жалобу ответив на несколько вопросов. Можете остановить диалог с ботом введя команду '/stop' или 'стоп'")
+             await callback.message.answer('Как вас зовут?')
+             await state.set_state(RestourantReview.name)
 
 
 @review_router.message(RestourantReview.name)

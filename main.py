@@ -11,6 +11,7 @@ import logging
 
 async def on_startup(bot: Bot):
     database.create_tables()
+    database.create_table()
 
 async def main():
     dp.include_router(start_router)

@@ -27,6 +27,15 @@ class AddFood(StatesGroup):
     category = State()
     portion = State()
 
+
+
+@food_router.message(Command('stop'))
+@food_router.message(F.text == 'стоп')
+async def stop(message: types.Message, state: FSMContext):
+    await message.answer('Диалог остановлен')
+    await state.clear()
+
+
 @food_router.message(Command('addfood'))
 async def start_proces(message: types.Message, state: FSMContext):
     await message.answer('Напишите названия блюда.')

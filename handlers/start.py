@@ -15,7 +15,8 @@ async def start_handler(message: types.Message):
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=[
             [types.InlineKeyboardButton(text='Онлайн меню', url='https://cyclone.kg/menu')],
             [types.InlineKeyboardButton(text='Подробнее о нас', url='https://cyclone.kg/')],
-            [types.InlineKeyboardButton(text='Оставить отзыв', callback_data='review')]
+            [types.InlineKeyboardButton(text='Оставить отзыв', callback_data='review')],
+            [types.InlineKeyboardButton(text='Dishes', callback_data='dish')],
 
         ])
 

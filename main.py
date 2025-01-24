@@ -7,6 +7,8 @@ from handlers.random_photo import random_router
 from handlers.myinfo import myinfo_router
 from handlers.review_dialog import review_router
 from handlers.add_food_dialog import food_router
+from handlers.dishes import dish_router
+from handlers.check_reviews import check_review_router
 import logging
 
 async def on_startup(bot: Bot):
@@ -20,6 +22,8 @@ async def main():
     dp.include_router(review_router)
     dp.startup.register(on_startup)
     dp.include_router(food_router)
+    dp.include_router(dish_router)
+    dp.include_router(check_review_router)
     await dp.start_polling(bot)
 
 

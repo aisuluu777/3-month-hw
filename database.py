@@ -42,3 +42,31 @@ class Database:
             INSERT INTO dishes(name, price, caption, category, portions)
             VALUES(?,?,?,?,?)''',
                         (data['name'], data['price'], data['caption'], data['category'], data['portions']))
+
+    def get_all_dishes(self):
+        with sqlite3.connect(self.path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            result = cursor.execute('SELECT * FROM dishes')
+            data = result.fetchall()
+            return [dict(row) for row in data]
+
+
+
+    def sort_by_price(self):
+        with sqlite3.connect(self.path) as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+            SELECT dishes
+            ORDER BY price''')
+            rows = cursor.fetchall()
+            for row in rows:
+                print(row)
+
+    def get_all_reviews(self):
+        with sqlite3.connect(self.path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            result = cursor.execute('SELECT * FROM reviews')
+            data = result.fetchall()
+            return [dict(row) for row in data]

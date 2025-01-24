@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c93660-7c9d-4012-abe3-dbebae852059" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7b1d8cc0-aee4-448a-b085-27d441814b39.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7b1d8cc0-aee4-448a-b085-27d441814b39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/dishes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/review_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/review_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/add_food_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/add_food_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/myinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/myinfo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -26,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/handlers/check_reviews.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -50,6 +54,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\HW3\3_Month_hw\handlers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="3_Month_hw" />
@@ -144,7 +153,17 @@
       <workItem from="1737444236378" duration="4371000" />
       <workItem from="1737448642801" duration="487000" />
       <workItem from="1737449447948" duration="348000" />
-      <workItem from="1737449859686" duration="1417000" />
+      <workItem from="1737449859686" duration="3035000" />
+      <workItem from="1737532974852" duration="2810000" />
+      <workItem from="1737544247674" duration="1051000" />
+      <workItem from="1737545706645" duration="22000" />
+      <workItem from="1737547593407" duration="218000" />
+      <workItem from="1737625639936" duration="835000" />
+      <workItem from="1737700685944" duration="1824000" />
+      <workItem from="1737702540929" duration="3497000" />
+      <workItem from="1737707070931" duration="21000" />
+      <workItem from="1737707133675" duration="74000" />
+      <workItem from="1737707235117" duration="959000" />
     </task>
     <servers />
   </component>
@@ -163,7 +182,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/3_Month_hw$main.coverage" NAME="main Coverage Results" MODIFIED="1737449782969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3_Month_hw$main.coverage" NAME="main Coverage Results" MODIFIED="1737707183005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3_Month_hw$HW6.coverage" NAME="HW6 Coverage Results" MODIFIED="1736501735242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
   </component>
 </project>

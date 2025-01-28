@@ -29,6 +29,7 @@ class AddFood(StatesGroup):
 
 
 
+
 @food_router.message(Command('stop'))
 @food_router.message(F.text == 'стоп')
 async def stop(message: types.Message, state: FSMContext):
@@ -91,7 +92,7 @@ async def portion_proces(message: types.Message, state: FSMContext):
         await message.answer('Вводите только положительное число!')
         return
     await state.update_data(portions=message.text)
-    await message.answer('Спасибо, блюдо было успешна сохранена')
+    await message.answer('Спасибо блюдо было сохранена')
     data = await state.get_data()
     print(data)
     database.save_dishes(data)

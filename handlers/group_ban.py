@@ -16,3 +16,4 @@ async def ban_handler(message: types.Message):
             if word in message.reply_to_message.text.lower():
                 await message.chat.ban(user_id)
 
+

@@ -10,6 +10,7 @@ from handlers.add_food_dialog import food_router
 from handlers.dishes import dish_router
 from handlers.check_reviews import check_review_router
 from handlers.group_ban import ban_router
+
 import logging
 
 async def on_startup(bot: Bot):

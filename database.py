@@ -37,6 +37,7 @@ class Database:
             photo TEXT)''')
 
 
+
     def save_dishes(self, data: dict):
         with sqlite3.connect (self.path) as conn:
             conn.execute('''

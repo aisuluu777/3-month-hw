@@ -9,6 +9,7 @@ from handlers.review_dialog import review_router
 from handlers.add_food_dialog import food_router
 from handlers.dishes import dish_router
 from handlers.check_reviews import check_review_router
+from handlers.group_ban import ban_router
 import logging
 
 async def on_startup(bot: Bot):
@@ -23,6 +24,7 @@ async def main():
     dp.startup.register(on_startup)
     dp.include_router(food_router)
     dp.include_router(dish_router)
+    dp.include_router(ban_router)
     dp.include_router(check_review_router)
     await dp.start_polling(bot)
 

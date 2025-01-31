@@ -26,6 +26,7 @@ class AddFood(StatesGroup):
     caption = State()
     category = State()
     portion = State()
+    photo = State()
 
 
 
@@ -92,7 +93,16 @@ async def portion_proces(message: types.Message, state: FSMContext):
         await message.answer('Вводите только положительное число!')
         return
     await state.update_data(portions=message.text)
-    await message.answer('Спасибо блюдо было сохранена')
+    await message.answer('Отправьте фотографию')
+    await state.set_state(AddFood.photo)
+
+
+@food_router.message(AddFood.photo, F.photo)
+async def photo_proces(message: types.Message, state: FSMContext):
+    await message.answer('Спасибо блюдо была сохранена')
+    photo_of_food = message.photo
+    biggest_image = photo_of_food[-1]
+    await state.update_data(photo=biggest_image.file_id)
     data = await state.get_data()
     print(data)
     database.save_dishes(data)

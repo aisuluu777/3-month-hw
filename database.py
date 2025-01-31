@@ -33,15 +33,16 @@ class Database:
             price INTEGER,
             caption TEXT,
             category TEXT,
-            portions INTEGER)''')
+            portions INTEGER,
+            photo TEXT)''')
 
 
     def save_dishes(self, data: dict):
         with sqlite3.connect (self.path) as conn:
             conn.execute('''
-            INSERT INTO dishes(name, price, caption, category, portions)
-            VALUES(?,?,?,?,?)''',
-                        (data['name'], data['price'], data['caption'], data['category'], data['portions']))
+            INSERT INTO dishes(name, price, caption, category, portions, photo)
+            VALUES(?,?,?,?,?,?)''',
+                        (data['name'], data['price'], data['caption'], data['category'], data['portions'], data['photo']))
 
     def get_all_dishes(self):
         with sqlite3.connect(self.path) as conn:

@@ -6,6 +6,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQu
 
 from bot_config import database
 
+
 food_router = Router()
 food_router.message.filter(
     F.from_user.id == 5947069782
@@ -107,6 +108,3 @@ async def photo_proces(message: types.Message, state: FSMContext):
     print(data)
     database.save_dishes(data)
     await state.clear()
-
-
-

@@ -136,7 +136,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-banned_words.py
+
 
 # Spyder project settings
 .spyderproject

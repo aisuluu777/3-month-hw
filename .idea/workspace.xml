@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17c93660-7c9d-4012-abe3-dbebae852059" name="Changes" comment="" />
+    <list default="true" id="17c93660-7c9d-4012-abe3-dbebae852059" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/group_ban.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/group_ban.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +180,8 @@
       <workItem from="1738316927053" duration="434000" />
       <workItem from="1738317381743" duration="20000" />
       <workItem from="1738317451248" duration="14000" />
-      <workItem from="1738317510313" duration="364000" />
+      <workItem from="1738317510313" duration="1050000" />
+      <workItem from="1738403551107" duration="2207000" />
     </task>
     <servers />
   </component>
